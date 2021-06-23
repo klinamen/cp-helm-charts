@@ -105,3 +105,10 @@ cp-ksql-server:
 cp-zookeeper:
   ## If the Zookeeper Chart is disabled a URL and port are required to connect
   url: ""  
+
+ingress:
+  enabled: false
+  hosts:
+    - host: cp-control-center.local
+      paths:
+        - path: /
